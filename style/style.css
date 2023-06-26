@@ -1,0 +1,596 @@
+@font-face {
+    font-family: calibri;
+    src: url(font/Calibri_Regular.ttf);
+}
+@font-face {
+    font-family: calibriBold;
+    src: url(font/Calibri_Bold.TTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+}
+h1{
+    text-align: center;
+    color: #167F9C;
+    padding: 30px;
+}
+.qui_expose, .profile, .VISITEURS, .info, .article{
+    width: 700px;
+    margin: auto;
+    color: #167F9C;
+}
+.bolder{
+    font-family: calibriBold;
+}
+.article{
+    margin: 40px auto;
+}
+.article .text{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+.article img{
+    width: 100%;
+}
+/***************************************** Header STyle *************************************/
+    .header{
+        display: flex;
+        width: 75%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.8s;
+        z-index: 10000;
+        height: 70px;
+        margin: auto;
+
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+    .navbar ul{
+        display: flex;
+        list-style-type: none;
+        width: max-content;
+        margin-top: 10px;
+    }
+    .navbar ul li a{
+        color: #191919;
+        text-decoration: none;
+        margin: 13px;
+        font-size: 20px;
+        transition: all 0.4s;
+        font-weight: 500;
+    }
+    .navbar ul li a:hover{
+        font-weight: bolder;
+    }
+    .btns{
+        margin-left: 30px;
+    }
+    .btns button{
+        height: 40px;
+        padding: 10px;
+        font-size: 15px;
+        margin: 6px;
+        border: white solid 1.6px;
+        border-radius: 4px;
+    }
+    .btns button:last-child{
+        background-color: transparent;
+        color: white;
+    }
+
+    .navbar ul li a{
+        color: #167F9C;
+    }
+    .logo img{
+        width: 55px;
+        height: 55px;
+    }
+
+
+
+/******************************* END ********************************************/
+
+
+
+/******************************* Fond Style ***************************************/
+    .fond{
+        height: 60vh;
+        width: max-content;
+        overflow: hidden;
+        width: 100%;
+    }
+    .fond img{
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+/************************ Statistique Styel **********************************/
+    .statistique{
+        background: linear-gradient( #167F9C, #016064);
+        width: 100%;
+        height: 200px;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .stats{
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        color: white;
+
+    }
+    .stats .content_stat {
+        display: flex;
+        justify-content: space-around;
+    }
+    .chifres{
+        margin: 20px;
+    }
+    .chifre{
+        font-size: 50px;
+    }
+    p{
+        margin-bottom: 5px;
+    }
+/****************************** END ***********************************/
+
+/******************** Presentation ******************/
+.presentation{
+
+
+    background-color: white;
+    padding: 30px 0px;
+}
+.presentation div{
+    width: 700px;
+    margin: auto;
+    color: #167F9C;
+    padding: 20px 50px;
+    text-align: center;
+    text-align:justify;
+    font-size: 25px;
+}
+.presentation div p{
+    padding-bottom: 30px;
+}
+hr:not([size]){
+    width: 750px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #167F9C;
+    margin: auto;
+}
+/********************************* END *******************************/
+
+/******************************INFO Style ******************************/
+    .info{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 70px 20px;
+        width: 700px;
+    }
+    .info div{
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info div a{
+        color: #167F9C;
+        text-decoration: none;
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+    }
+    .info div a img{
+        width: 95%;
+        height: 95%;
+        padding: 10px;
+    }
+/************************* END ***********************/
+
+
+
+/***************** Formulaire ************************/
+
+.formulaire{
+    background-color: #167F9C;
+    position: relative;
+    height: 950px;
+    width: 100%;
+    margin: 50px 0px;
+    z-index: -2;
+}
+form{
+   background-color: white;
+   position: absolute;
+   width: 70%;
+   margin: auto;
+   border-radius: 11px;
+
+   left: 15%;
+   box-shadow: rgba(0, 0, 0, 0.20) 4px 3px 15px;
+   top: -40px;
+   padding: 20px;
+   font-size: 17px;
+   z-index: 1;
+}
+form h1{
+    margin: 20px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+form div input,form div select{
+    border: none;
+    border-bottom: solid 2px #167F9C;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+}
+form div input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+textarea{
+    border: #167F9C solid 2px ;
+    border-radius: 11px;
+    padding: 9px;
+}
+label{
+    margin: 8px 0px;
+    font-size: 20px;
+}
+.btn{
+    text-align: right;
+}
+.btn button{
+    border: none;
+    color: white;
+    background-color: #167F9C;
+    padding: 10px 40px;
+    border-radius: 8px;
+}
+.localisation{
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    border-radius: 11px;
+    left: 14%;
+    box-shadow: rgba(0, 0, 0, 0.15) 4px 3px 15px;
+    bottom: -40px;
+    padding: 20px;
+    height: 300px;
+    z-index: -1;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+}
+.logos{
+    width: 20%;
+    text-align: center;
+}
+
+
+/************************* FOOTER STYLE ****************/
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    align-items: center;
+    flex-direction: column;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.contact h1{
+    margin-bottom: 20px;
+}
+.contact a{
+    color: #167F9C;
+    text-decoration: none;
+    font-size: 20px;
+}
+.contact a i{
+    padding: 8px;
+    color: #167F9C;
+}
+.contact img{
+    width: 150px;
+    height: 150px;
+}
+.social{
+    width: 100%;
+    background-color: #006699;
+    height: 100px;
+}
+.social-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    margin: auto;
+    height: 100%;
+}
+.social-parent a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.social-parent a i{
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+}
+.social-parent img{
+    width: 200px;
+}
+
+/*********** visiter Le Salon************************************/
+.banner{
+    width: 100%;
+    height: 400px;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.badge{
+    text-align: center;
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+}
+.badge button{
+    border: none;
+    color: white;
+    background-color: #167F9C;
+    padding: 20px  50px;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+}
+.badge button:hover{
+    padding: 20px  75px;
+    color: #167F9C;
+    background-color: white;
+    border: 2px solid #167F9C;
+}
+.badge_form{
+    position: relative;
+}
+
+/***************************** qui expose ***********************/
+.qui_expose div p{
+    font-size: 20px;
+}
+.expose_itmes img{
+    flex: 2.5;
+    height: 100%;
+    padding: 0px 50px;
+    width: 100%;
+}
+.main{
+    background-image: url('plan.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.main .pictures{
+    width: 700px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.main .pictures img{
+    width: 100%;
+    margin: auto;
+}
+.main .pictures div{
+    position: relative;
+}
+.main .pictures div img:last-child{
+    position: absolute;
+    bottom: 10px;
+    right: 15%;
+    left: 25%;
+    width: 60%;
+}
+
+.badgeparent.active, .infoexposer{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 120vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.badgeparent{
+    display: none;
+}
+.badge_child{
+    width: 90%;
+    height: 90%;
+    background-color: #167F9C;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-radius: 11px;
+    align-items: center;
+}
+.badge_child form{
+
+    top: -10px;
+}
+.badge_child i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+/******************* Qui visit *********************************/
+.parent_visit{
+    width: 70%;
+    margin: auto;
+    font-size: 22px;
+    color: #016064;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.parent_visit .txt ul li{
+    text-align: justify;
+}
+.parent_visit .picture img{
+    width: 100%;
+}
+.swiper-slide2 img{
+    width: 100%;
+    height: 85vh;
+}
+
+.expobtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.parentvalues{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 0px;
+  }
+ .parentvalues .item{
+    color: white;
+    position: relative;
+    width: 220px;
+    background-color: #167F9C;
+    height: 200px;
+    border-radius: 11px;
+  }
+.parentvalues .item img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 33%;
+    left: 33%;
+    top: -30px;
+
+}
+.parentvalues .item h3{
+    margin-top: 60px;
+    text-align: center;
+}
+.parentvalues .item p{
+    padding: 20px;
+}
+/***************************************** END *****************************************/
+
+.parentservice.active{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parentservice{
+    display: none;
+}
+.service_gallery{
+    width: 90%;
+    height: 80%;
+    background-color: #006699;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-radius: 11px;
+    align-items: center;
+}
+.service_gallery{
+    width: 90%;
+    height: 80%;
+    background-color: #167F9C;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-radius: 11px;
+    align-items: center;
+}
+.service_gallery i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.service_gallery .text{
+    color: white;
+    font-size: 17px;
+    flex: 70%;
+    padding-left: 35px;
+}
+.service_gallery .pic img{
+    width: 90%;
+    height: 80%;
+}
+.service_gallery .pic{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+}
+ #definition{
+    font-size: 18px;
+ }
+ #pic_service{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+/*************************************** END *****************************************/
+
+
+
+

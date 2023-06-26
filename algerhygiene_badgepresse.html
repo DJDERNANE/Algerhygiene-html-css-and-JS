@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Algerhygiene , alger hygiene , salon hygiene , salon alger, hygiene , le salon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge Presse</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/largeEcron.css">
+    <link rel="icon" href="imgs/algerhygiene_logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+    <div class="header" id="headtop">
+        <div class="parent">
+            <div class="logo">
+                <img src="imgs/algerhygiene_logo.svg" alt="algerhygiene logo " srcset="">
+            </div>
+            <div class="listbtn" id="btnlist">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    
+        <div class="navbar" id="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        ACCUEIL
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html#salon">
+                        LE SALON
+                    </a>
+                </li>
+                <li>
+                    <a href="algerhygiene_qui_expose.html">
+                        QUI EXPOSE
+                    </a>
+                </li>
+    
+                
+                <li>
+                    <a href="index.html#contact">
+                        CONTACT
+                    </a>
+                </li>
+    
+            </ul>
+        </div>
+    
+    </div>
+
+
+    <div class="badgeparent" id="parentservice">
+
+        <div class="badge_child">
+            <i class="bi bi-x-circle" id="cancel"></i>
+            <form action="/badgepresseform" method="POST" class="row">
+               
+                <h1 class="col-12">Badge Presse</h1>
+
+
+                <div class="col-md-6">
+                    <label for=""> Nom :</label>
+                    <input type="text" placeholder="Votre nom" name="nom">
+                </div>
+                <div class="col-md-6">
+                    <label for=""> Prénom :</label>
+                    <input type="text" placeholder="Votre Prénom" name="prenom">
+                </div>
+                <div class="col-md-6">
+                    <label for=""> Société : </label>
+                    <input type="text" placeholder="Le nom de votre Société " name="societe">
+                </div>
+                <div class="col-md-6">
+                    <label for=""> Fonction : </label>
+                    <input type="text" placeholder="La fonction de votre Société" name="fonction">
+                </div>
+                <div class="col-md-6">
+                    <label for=""> Email : </label>
+                    <input type="Email" placeholder="votre Email" name="email">
+                </div>
+                <div class="col-md-6">
+                    <label for=""> Télephone : </label>
+                    <input type="text" placeholder="Numéro télephone" name="telephone">
+                </div>
+                <div class="message col-12">
+                    <label for=""> Votre demande : </label>
+                    <textarea name="demande" id="" cols="30" rows="8"></textarea>
+                </div>
+
+                <div class="btn col-12">
+                    <BUtton> Envoyer </BUtton>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="imgs/Alger_hygiene.jpg" alt="algerhygiene" srcset="">
+    </div>
+    
+    <div class="badge">
+        <button onclick="show()">BADGE PRESSE <i class="bi bi-arrow-right"></i></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+                [{
+                    b: -1,
+                    d: 1,
+                    ls: 0.5
+                }, {
+                    b: 0,
+                    d: 1000,
+                    y: 5,
+                    e: {
+                        y: 6
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    ls: 0.5
+                }, {
+                    b: 200,
+                    d: 1000,
+                    y: 25,
+                    e: {
+                        y: 6
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    ls: 0.5
+                }, {
+                    b: 400,
+                    d: 1000,
+                    y: 45,
+                    e: {
+                        y: 6
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    ls: 0.5
+                }, {
+                    b: 600,
+                    d: 1000,
+                    y: 65,
+                    e: {
+                        y: 6
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    ls: 0.5
+                }, {
+                    b: 800,
+                    d: 1000,
+                    y: 85,
+                    e: {
+                        y: 6
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    ls: 0.5
+                }, {
+                    b: 500,
+                    d: 1000,
+                    y: 195,
+                    e: {
+                        y: 6
+                    }
+                }],
+                [{
+                    b: 0,
+                    d: 2000,
+                    y: 30,
+                    e: {
+                        y: 3
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    rY: -15,
+                    tZ: 100
+                }, {
+                    b: 0,
+                    d: 1500,
+                    y: 30,
+                    o: 1,
+                    e: {
+                        y: 3
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    rY: -15,
+                    tZ: -100
+                }, {
+                    b: 0,
+                    d: 1500,
+                    y: 100,
+                    o: 0.8,
+                    e: {
+                        y: 3
+                    }
+                }],
+                [{
+                    b: 500,
+                    d: 1500,
+                    o: 1
+                }],
+                [{
+                    b: 0,
+                    d: 1000,
+                    y: 380,
+                    e: {
+                        y: 6
+                    }
+                }],
+                [{
+                    b: 300,
+                    d: 1000,
+                    x: 80,
+                    e: {
+                        x: 6
+                    }
+                }],
+                [{
+                    b: 300,
+                    d: 1000,
+                    x: 330,
+                    e: {
+                        x: 6
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    r: -110,
+                    sX: 5,
+                    sY: 5
+                }, {
+                    b: 0,
+                    d: 2000,
+                    o: 1,
+                    r: -20,
+                    sX: 1,
+                    sY: 1,
+                    e: {
+                        o: 6,
+                        r: 6,
+                        sX: 6,
+                        sY: 6
+                    }
+                }],
+                [{
+                    b: 0,
+                    d: 600,
+                    x: 150,
+                    o: 0.5,
+                    e: {
+                        x: 6
+                    }
+                }],
+                [{
+                    b: 0,
+                    d: 600,
+                    x: 1140,
+                    o: 0.6,
+                    e: {
+                        x: 6
+                    }
+                }],
+                [{
+                    b: -1,
+                    d: 1,
+                    sX: 5,
+                    sY: 5
+                }, {
+                    b: 600,
+                    d: 600,
+                    o: 1,
+                    sX: 1,
+                    sY: 1,
+                    e: {
+                        sX: 3,
+                        sY: 3
+                    }
+                }]
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $LazyLoading: 1,
+                $CaptionSliderOptions: {
+                    $Class: $JssorCaptionSlideo$,
+                    $Transitions: jssor_1_SlideoTransitions
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$,
+                    $SpacingX: 20,
+                    $SpacingY: 20
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1600;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                } else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            pagination: {
+                el: ".swiper-pagination2",
+                dynamicBullets: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init();
+    </script>
+    <script>
+        function animate(obj, initVal, lastVal, duration) {
+            let startTime = null;
+
+            //get the current timestamp and assign it to the currentTime variable
+            let currentTime = Date.now();
+
+            //pass the current timestamp to the step function
+            const step = (currentTime) => {
+
+                //if the start time is null, assign the current time to startTime
+                if (!startTime) {
+                    startTime = currentTime;
+                }
+
+                //calculate the value to be used in calculating the number to be displayed
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+
+                //calculate what to be displayed using the value gotten above
+                obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+                //checking to make sure the counter does not exceed the last value (lastVal)
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    window.cancelAnimationFrame(window.requestAnimationFrame(step));
+                }
+            };
+            //start animating
+            window.requestAnimationFrame(step);
+        }
+        let text1 = document.getElementById('0101');
+        let text2 = document.getElementById('0102');
+        let text3 = document.getElementById('0103');
+        const load = () => {
+            animate(text1, 0, 511, 6000);
+            animate(text2, 0, 232, 6000);
+            animate(text3, 0, 50, 6000);
+        }
+    </script>
+
+    <script>
+        var slideUp = {
+            distance: '70px',
+            origin: 'bottom',
+            opacity: null,
+            delay: 180,
+            reset: true,
+            opacity: 0,
+            duration: 600
+        };
+        var slideright = {
+            distance: '10px',
+            origin: 'right',
+            opacity: null,
+            delay: 150,
+            reset: true,
+            opacity: 0,
+            duration: 800
+        };
+        var slideleft = {
+            distance: '10px',
+            origin: 'left',
+            opacity: null,
+            delay: 150,
+            reset: true,
+            opacity: 0,
+            duration: 800
+        };
+
+        ScrollReveal().reveal('.left', slideright);
+        ScrollReveal().reveal('.right', slideleft);
+        ScrollReveal().reveal('.up', slideUp);
+    </script>
+
+
+</body>
+</html>

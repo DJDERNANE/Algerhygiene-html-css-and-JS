@@ -1,0 +1,246 @@
+@media screen and (max-width: 850px) {
+    .qui_expose, .profile, .VISITEURS, .info, .footer{
+        width: 93%;
+        margin: auto;
+        color: #167F9C;
+    }
+    .main{
+        height: max-content;
+    }
+    .main .pictures{
+        width: 90%;
+        height: max-content;
+    }
+    .pictures div{
+        padding-top: 40px;
+    }
+    /**************************** Header Style **************************/
+    .navbar ul {
+        display: none;
+        height: 100vh;
+    }
+    .listbtn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 3px;
+    }
+
+    .listbtn.active span:nth-child(2) {
+        visibility: hidden;
+        transition: all 0.6s;
+    }
+
+    .listbtn.active span:first-child {
+        transform: rotate(45deg) translateY(11.5px);
+        background-color: white;
+        transition: all 0.6s;
+    }
+
+    .listbtn.active span:last-child {
+        transform: rotate(-45deg) translateY(-11.5px);
+        background-color: white;
+        transition: all 0.6s;
+    }
+
+    .listbtn span {
+        width: 35px;
+        height: 3px;
+        background-color: #167F9C;
+        border-radius: 3px;
+        margin: 3px;
+
+    }
+
+    .header.active {
+        background: #167F9C;
+        position: fixed;
+    }
+
+    .navbar.active {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #167F9C;
+    }
+
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .navbar.active ul li {
+        padding: 20px;
+        width: 100%;
+        border-bottom: white 1px solid;
+    }
+
+    .navbar.active ul li a {
+        color: white;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .btns button {
+        margin: 20px 0px;
+
+    }
+
+    .header .parent,.header.active .parent {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        align-items: center;
+        height: 45px;
+        margin-top: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        z-index: 10000;
+        width: 90%;
+    }
+
+    .header.scrolled .listbtn span {
+        background-color: white;
+        transition: all 0.8s;
+    }
+
+    .logo img {
+        width: max-content;
+        height: 50px;
+        margin-left: 0px;
+    }
+/****************************** END ********************************/
+
+
+/****************************** FOND *******************************/
+    .fond{
+        height: 50vh;
+    }
+
+/***************************** END *************************************/
+
+
+
+/********************************** STATISTIQUE ***********************************/
+
+.statistique{
+    height: max-content;
+    padding: 10px;
+}
+
+/******************************* END **************************************/
+
+
+
+/**************************** presentation ******************************/
+.presentation div{
+    width: 95%;
+    padding: 20px;
+}
+/*********************************END *****************************/
+
+
+
+
+/**************************** INFO style ************************/
+    .info {
+
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+    }
+    .info div{
+        width: 130px;
+        height: 140px;
+        margin: 20px
+    }
+/***************************** END *********************************/
+
+
+
+/******************************** Form **********************/
+    .formulaire{
+        height: 900px;
+    }
+    form h1{
+        margin: 10px;
+    }
+    .localisation{
+        width: 90%;
+        height: 200px;
+        left: 5%;
+    }
+    form{
+        width: 90%;
+        left: 8%;
+    }
+    .badge_child{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    .badge_child form {
+        top: 45px;
+    }
+    /************************** END ********************************/
+
+/***************************** FOOTER *******************************/
+    .footer{
+        flex-direction: column;
+    }
+    .logos{
+        margin: auto;
+    }
+
+
+
+
+
+    .parent_visit{
+        width: 95%;
+    }
+    /********************************* Values **************************************/
+    .parentvalues {
+        height: max-content;
+        padding: 30px 10px;
+        flex-direction: column;
+    }
+
+    .parentvalues .item {
+        width: 90%;
+        height: 250px;
+        margin: 20px;
+    }
+    .parentvalues .item img{
+        left: 35%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .main{
+        height: 60vh;
+    }
+}
+@media screen and (max-width: 370px){
+    .main{
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 780px){
+    .localisation{
+        bottom: -120px;
+    }
+}
